@@ -1,0 +1,287 @@
+:root {
+    --primary-blue: #1c2635; /* Header and dark section background */
+    --accent-yellow: #f8b418; /* Rotary wheel yellow */
+    --accent-gold: #c6a25b; /* Gold text */
+    --card-green: #0d9641; /* Green banner in team cards */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-light: #fbfbfb;
+    --bg-black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.full-width-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: var(--primary-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px; /* Adjust based on actual logo */
+    background: #fff; /* Mock for the white background of logo */
+    padding: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.phone-link {
+    color: var(--accent-gold);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Black Background Section (Image 4) */
+.black-bg {
+    background-color: var(--bg-black);
+}
+
+/* Dark Blue Welcome Section (Image 3) */
+.dark-blue-bg {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: var(--accent-gold);
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    flex: 1;
+}
+
+.framed-img {
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Leadership Section (Image 2) */
+.light-bg {
+    background-color: var(--bg-light);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.shadow-img {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Team Cards Section (Image 1) */
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.team-card {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: relative;
+    padding-bottom: 80px; /* Space for the overlapping green banner */
+}
+
+.card-img-wrapper {
+    border: 3px solid #111;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-img-wrapper img {
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-banner {
+    background-color: var(--card-green);
+    color: #fff;
+    padding: 25px 10px 15px;
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    right: -10px;
+    z-index: 2;
+    clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%);
+}
+
+.card-banner h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.card-banner p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #fff;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    align-items: flex-start;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.service-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Scroll to top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #999;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.scroll-top:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+    }
+    
+    .header-container {
+        padding: 10px 20px;
+    }
+}

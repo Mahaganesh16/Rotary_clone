@@ -19,7 +19,7 @@
     <header class="main-header">
         <div class="header-container">
             <div class="logo">
-                <img src="assets/rotary-madurai-banner-1-1-scaled.jpg" alt="Rotary Club of Madurai Logo" class="logo-img" style="height: 80px; object-fit: contain; background: white;">
+                <img src="https://via.placeholder.com/250x80.png?text=Rotary+Logo" alt="Rotary Club of Madurai Logo" class="logo-img" style="height: 80px; object-fit: contain; background: white;">
             </div>
             <div class="header-right">
                 <a href="tel:+919585399000" class="phone-link">
@@ -46,9 +46,14 @@
 
         <!-- Section from Image 3: Welcome Section -->
         <section class="welcome-section section-padding dark-blue-bg">
-            <div class="container welcome-container">
-                <div class="welcome-text">
-                    <h1 class="welcome-title">Welcome to the <span class="typing-text"></span> Rotary Club of Madurai–Since 1938</h1>
+            <style>
+                .typing-text, .typed-cursor { color: var(--accent-gold, #c6a25b); }
+            </style>
+            <div class="container text-center">
+                <h1 class="welcome-title" style="margin-bottom: 50px; line-height: 1.4;">Welcome to the <span class="typing-text"></span> Rotary Club of<br>Madurai–Since 1938</h1>
+            </div>
+            <div class="container welcome-container" style="align-items: flex-start; gap: 40px;">
+                <div class="welcome-text" style="flex: 0 0 40%;">
                     <h2 class="subtitle">ROTARY CLUB OF MADURAI</h2>
                     <p class="description">
                         Established on 27th December 1938, the Rotary Club of Madurai is the city's first and oldest club.
@@ -57,19 +62,22 @@
                         For over 85 years, we've served with integrity and compassion, upholding Rotary's motto, "Service Above Self," through impactful community projects and lasting fellowship.
                     </p>
                 </div>
-                <div class="welcome-image">
-                    <img src="assets/old-pic-2.jpg" alt="Historical Members" class="framed-img">
+                <div class="welcome-image" style="flex: 0 0 60%;">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <h3 style="color: #c6a25b; font-weight: 600; margin-bottom: 10px; font-size: 18px;">TEAM @ SILVER JUBILEE</h3>
+                        <img src="assets/old-pic-2.jpg" alt="Historical Members" class="framed-img" style="width: 100%;">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section from Image 2: Leadership Team -->
-        <section class="leadership-section section-padding light-bg">
+        <section class="leadership-section section-padding light-bg" style="padding-bottom: 0;">
             <div class="container">
                 <h2 class="section-title text-center">Leadership Team 2025–2026</h2>
-                <div class="leadership-image-wrapper">
-                    <img src="https://via.placeholder.com/1200x500.png?text=Leadership+Team+Photo" alt="Leadership Team" class="full-width-img shadow-img">
-                </div>
+            </div>
+            <div class="leadership-image-wrapper" style="width: 100%;">
+                <img src="assets/rotary-madurai-banner-1-1-scaled.jpg" alt="Leadership Team" class="full-width-img shadow-img" style="width: 100%; display: block; object-fit: cover;">
             </div>
         </section>
 
